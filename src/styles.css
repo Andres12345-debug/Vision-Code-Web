@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  p {
+    font-family: 'Jura', sans-serif;
+  }
+  
+  .titulos{
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(0, 0, 83);
+
+  }
+
+  .azulito{
+    background-color: rgb(0, 0, 83);
+
+  }
+
+  .azulLetra{
+    color:  rgb(3, 3, 187);
+  }
+
+  .moradoLetra{
+    color: rgb(21, 28, 255);
+  }
+
+  .rojitoLetras{
+    color: #ef2c14;
+  }
+
+  .rojoFondos{
+    background-color: #ef2c14;
+  }
+
+  .moradoOtro{
+    color: rgb(32, 69, 255);
+  }

@@ -1,0 +1,489 @@
+<div
+  class="jumbo mb-4 circle-container inicio-container"
+  style="margin-top: 110px"
+>
+  <div class="container my-lg-8">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-6 mb-lg-0">
+        <div>
+          <h1 class="display-3 fw-bold mb-3">
+            VISION <span class="azulLetra">CODE</span>
+          </h1>
+          <p class="pe-lg-10 mb-5 fs-5">
+            En Vision Code, nos especializamos en la creación de
+            <span class="azulLetra">páginas</span> web que combinan diseño
+            atractivo y funcionalidad. Nuestro objetivo es ofrecer
+            <span class="azulLetra">soluciones</span> digitales personalizadas
+            que ayuden a nuestros clientes a destacar en el entorno online.
+          </p>
+          <button
+            type="button"
+            class="btn btn-lg px-4 me-md-2 fw-bold text-white bounce"
+            style="background-color: rgb(0, 0, 83)"
+            (click)="abrirModal()"
+          >
+            Contacto
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center imagenPresentacion">
+        <div
+          class="position-relative imagenPrincipal"
+          *ngFor="let imagen of arregloImagenes"
+        >
+          <img src="{{ imagen.ruta }}" alt="" height="80%" width="100%" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Círculos -->
+  <div class="circle circle-2"></div>
+</div>
+<div class="p-5 mb-4 prueba">
+  <h1 class="pb-2 border-bottom text-white">
+    Beneficios de nuestras páginas web
+  </h1>
+  <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+    <div class="col d-flex flex-column align-items-start gap-2">
+      <h2 class="fw-bold text-white">
+        Conoce por qué nuestra solución web es ideal para tu negocio
+      </h2>
+      <p class="text-white">
+        Ofrecemos más que solo un sitio web. Nuestras páginas están diseñadas
+        para <span class="moradoLetra">impulsar </span>tu marca, mejorar tu
+        presencia en línea y conectar con tu público de manera efectiva.
+        ¡Descubre todos los beneficios que obtienes al elegirnos!
+      </p>
+    </div>
+    <div class="col">
+      <div class="row row-cols-1 row-cols-sm-2 g-4">
+        <div class="col d-flex flex-column gap-2">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+          >
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#collection"></use>
+            </svg>
+          </div>
+          <h4 class="fw-semibold mb-0 text-white">Diseño personalizado</h4>
+          <p class="text-white">
+            Tu página web será única, diseñada específicamente para destacar la
+            identidad de tu marca.
+          </p>
+        </div>
+
+        <div class="col d-flex flex-column gap-2">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+          >
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#gear-fill"></use>
+            </svg>
+          </div>
+          <h4 class="fw-semibold mb-0 text-white">Funcionalidades a medida</h4>
+          <p class="text-white">
+            Implementamos herramientas y funciones que se adaptan perfectamente
+            a las necesidades de tu negocio.
+          </p>
+        </div>
+
+        <div class="col d-flex flex-column gap-2">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+          >
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#speedometer"></use>
+            </svg>
+          </div>
+          <h4 class="fw-semibold mb-0 text-white">Rendimiento optimizado</h4>
+          <p class="text-white">
+            Nuestras páginas están optimizadas para cargar rápido y ofrecer una
+            experiencia de usuario fluida.
+          </p>
+        </div>
+
+        <div class="col d-flex flex-column gap-2">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+          >
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#table"></use>
+            </svg>
+          </div>
+          <h4 class="fw-semibold mb-0 text-white">Soporte continuo</h4>
+          <p class="text-white">
+            Te brindamos asistencia y mantenimiento para asegurar que tu página
+            funcione siempre a la perfección.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="position-relative p-5 text-left border border-dashed rounded-5 container-experiencia"
+    style="background: rgb(253, 253, 253)"
+  >
+    <div class="container my-lg-8">
+      <!-- row -->
+      <div class="row align-items-center">
+        <!-- col -->
+        <div class="col-lg-6 mb-6 mb-lg-0">
+          <div>
+            <h1 class="display-4 fw-bold lh-1" style="color: rgb(0, 0, 83)">
+              PUEDES LLEGAR A MÁS PUBLICO
+            </h1>
+            <!-- para -->
+            <p class="pe-lg-10 mb-5 fs-5 text-dark">
+              Tener una <span class="moradoLetra">página</span> web bien
+              diseñada y optimizada te permite ampliar tu alcance, atrayendo
+              clientes no solo a nivel local, sino también a nivel global. Al
+              estar disponible las <span class="moradoLetra">24 horas</span> del
+              día, los 7 días de la semana, tu negocio puede captar nuevas
+              oportunidades de manera constante, facilitando que más personas
+              conozcan tu marca y los servicios que ofreces.
+            </p>
+            <!-- btn -->
+          </div>
+        </div>
+        <!-- col -->
+        <div class="col-lg-6 d-flex justify-content-center">
+          <!-- images -->
+          <div class="position-relative" *ngFor="let imagen of arregloMas">
+            <img src="{{ imagen.ruta }}" alt="" width="100%" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container py-3">
+    <div class="pricing-header mt-3 p-3 pb-md-4 mx-auto text-white">
+      <h1 class="pb-2 border-bottom text-white">
+        Beneficios de nuestras páginas web
+      </h1>
+      <p class="pt-4 fs-5">
+        Un sitio web desactualizado puede afectar la percepción de tu marca y
+        dificultar la experiencia de los usuarios. En Vision Code, nos
+        especializamos en transformar sitios web antiguos, haciéndolos más
+        atractivos, rápidos y funcionales. Si tu página necesita un cambio,
+        estos son algunos de los servicios que ofrecemos para modernizarla y
+        llevarla al siguiente nivel
+      </p>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center border-dark">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm border-dark card-contenido">
+        <div
+          class="card-header py-3 border-dark text-white"
+          style="background-color: rgb(0, 5, 61)"
+        >
+          <h4 class="my-0 fw-bold">Modernización de diseño</h4>
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mt-3 mb-4">
+            <p>
+              Actualizamos la estética visual de tu página web para que se vea
+              más atractiva y moderna, alineada con las tendencias actuales de
+              diseño y las necesidades de tu negocio.
+            </p>
+            <div *ngFor="let imagen of arregloCards">
+              <img src="{{ imagen.rutaTres }}" alt="" width="100%" />
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-------BENEDICIOS----------->
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm card-contenido border-dark">
+        <div
+          class="card-header py-3 text-white border-dark"
+          style="background-color: rgb(0, 5, 61)"
+        >
+          <h4 class="my-0 fw-bold">Optimización para dispositivos</h4>
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mt-3 mb-4">
+            <p>
+              Adaptamos tu sitio web para que sea completamente responsivo,
+              garantizando que funcione de manera fluida en cualquier
+              dispositivo
+            </p>
+            <div *ngFor="let imagen of arregloCards">
+              <img src="{{ imagen.rutaDos }}" alt="" width="100%" />
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm card-contenido border-dark">
+        <div
+          class="card-header py-3 text-white"
+          style="background-color: rgb(0, 5, 61)"
+        >
+          <h4 class="my-0 fw-bold">Mejora del rendimiento</h4>
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mt-3 mb-4">
+            <p>
+              Optimizamos el código y los recursos de tu sitio para que cargue
+              más rápido, mejorando tanto la experiencia del usuario como tu
+              posicionamiento en los motores de búsqueda.
+            </p>
+            <div *ngFor="let imagen of arregloCards">
+              <img src="{{ imagen.rutaCuatro }}" alt="" width="100%" />
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!---DISTANCIA-->
+<div class="container py-3 cointainer-card">
+  <div
+    class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
+  >
+    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h1 class="display-4 fw-bold lh-1 text-body-emphasis border-bottom">
+        Estamos a un clic de <span class="azulLetra">distancia</span>
+
+        <i class="m-3 fa-solid fa-location-dot fa-bounce text-danger"></i>
+      </h1>
+      <p class="lead">
+        <span class="moradoLetra">Somos una empresa 100% boyacense</span> que
+        opera de manera virtual, lo que nos permite ofrecer soluciones digitales
+        sin fronteras. Aunque nuestras raíces están en Boyacá, trabajamos
+        contigo sin importar tu ubicación, brindando un servicio cercano y
+        eficiente desde cualquier parte del mundo.
+      </p>
+      <div
+        class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
+      ></div>
+    </div>
+    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.15203577295!2d-73.36015352650222!3d5.544462833768666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7c3b1f9cda19%3A0xdabdf9552ec5926!2sTunja%20-%20Boyaca!5e0!3m2!1ses-419!2sco!4v1729714230556!5m2!1ses-419!2sco"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="container px-4 py-5" id="custom-cards">
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col saltarin">
+          <div
+            class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg fondoCard"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3  text-shadow-1"
+            >
+              <h1 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Transparencia
+              </h1>
+              <p>
+                Mantenemos una
+                <span class="moradoLetra">comunicación</span> abierta y honesta
+                durante todo el proyecto, para que siempre estés al tanto de los
+                avances.
+              </p>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <i class="bi bi-envelope-plus-fill"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!---------ENTREGA PUNTUAL------->
+        <div class="col saltarin">
+          <div
+            class="card card-cover h-100 overflow-hidden  rounded-4 shadow-lg fondoCard"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1"
+            >
+              <h1 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Entrega puntual
+              </h1>
+              <p>
+                <span class="moradoLetra">Cumplimos</span> con los plazos
+                acordados para que tu proyecto esté listo cuando lo necesites.
+              </p>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <i class="bi bi-calendar-heart"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col" class="saltarin"> 
+          <div
+            class="card card-cover h-100 overflow-hidden fondoCard rounded-4 shadow-lg"
+          >
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h1 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                DEMO GRATUITO
+              </h1>
+              <p>
+                Ofrecemos un <span class="moradoLetra">demo</span> totalmente
+                <span>gratis</span> para que puedas ver el potencial de tu
+                proyecto antes de comprometerte.
+              </p>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <i class="bi bi-person-workspace"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background-wrapper">
+      <svg
+        class="svg-background"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 800 400"
+      >
+        <!-- Dark background -->
+        <rect width="800" height="400" fill="#fff" />
+        <!-- Abstract curva PRIMERA linea in background -->
+        <path
+          d="M0,100 C150,80 300,150 450,100 S600,50 800,100"
+          stroke="#c4acdf"
+          fill="none"
+          stroke-width="2"
+          opacity="0.5"
+        />
+        <path
+          d="M0,200 C200,180 400,250 600,200 S700,150 800,200"
+          stroke="#dbcee9"
+          fill="none"
+          stroke-width="2"
+          opacity="0.5"
+        />
+        <!-- Neon Circulo arriba effects Derecho -->
+
+        <defs>
+          <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+            <feColorMatrix
+              in="blur"
+              type="matrix"
+              values="0 0 0 0 0   0 0 0.8 0 0   1 0 0 0 0  0 0 0 1 0"
+            />
+            <feMerge>
+              <feMergeNode in="colorMatrix" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+      </svg>
+      <div class="containerColor py-3">
+        <div class="px-4 pt-3 my-5 text-center border-bottom">
+          <h1 class="display-4 fw-bold text-body-emphasis">
+            <span class="azulLetra">Confianza</span> desde el primer
+            clic
+            <i class="fa-regular fa-hand-point-up"></i>
+          </h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+              Nuestro objetivo es que tomes una decisión informada y segura. Con
+              el demo <span class="moradoLetra">gratuito</span>, no solo te
+              mostramos nuestra capacidad técnica, sino también nuestro
+              <span class="moradoLetra">compromiso</span> contigo. Queremos que
+              te sientas respaldado desde el inicio y que cada paso del proceso
+              te brinde la tranquilidad que
+              <span class="moradoLetra">mereces</span>
+            </p>
+          </div>
+          <div class="overflow-hidden" style="max-height: 30vh">
+            <div class="container px-5">
+              <img
+                src="../../../../assets/img/volando.png"
+                class="img-fluid border rounded-3 shadow-lg mb-4"
+                alt="Example image"
+                width="700"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---------------MODAL---------->
+<div
+  class="modal fade"
+  bsModal
+  #modalDetalle="bs-modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="dialog-basic-title"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title pull-left fs-2 azulLetra">{{ modalTitulo }}</h1>
+        <button
+          type="button"
+          class="btn-close"
+          aria-label="Close"
+          (click)="modalDetalle.hide()"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <p>{{ modalContenido }}</p>
+        <!-- Aquí agregamos los iconos con enlaces -->
+        <div class="social-icons mt-3">
+          <a
+            href="https://www.facebook.com/profile.php?id=61559080073139"
+            target="_blank"
+            class="me-3"
+          >
+            <i class="bi bi-facebook fs-4 text-dark"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/vision.code24/"
+            target="_blank"
+            class="me-3"
+          >
+            <i class="bi bi-instagram fs-4 text-dark"></i>
+          </a>
+          <a
+            href="mailto:vision.code24@gmail.com?subject=Hola%20desde%20mi%20web&body=Este%20es%20el%20contenido%20del%20correo."
+            class="me-3"
+          >
+            <i class="bi bi-mailbox-flag text-danger fs-4"></i>
+          </a>
+          <a
+            href="https://wa.me/573007538453?text=Hola%20quiero%20más%20información"
+            target="_blank"
+            class="me-3"
+          >
+            <i class="bi bi-whatsapp fs-4 text-success"></i>
+          </a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-dark"
+          style="background-color: rgb(0, 0, 83)"
+          (click)="modalDetalle.hide()"
+        >
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

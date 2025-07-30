@@ -1,0 +1,128 @@
+<div class="background-wrapper">
+  <svg
+    class="svg-background"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 800 400"
+  >
+    <!-- Dark background -->
+    <!-- Abstract curva PRIMERA linea in background -->
+    <path
+      d="M0,100 C150,80 300,150 450,100 S600,50 800,100"
+      stroke="#5c1ddb"
+      fill="none"
+      stroke-width="2"
+      opacity="0.5"
+    />
+    <path
+      d="M0,200 C200,180 400,250 600,200 S700,150 800,200"
+      stroke="#5c1ddb"
+      fill="none"
+      stroke-width="2"
+      opacity="0.5"
+    />
+    <!-- Neon Circulo arriba effects Derecho -->
+    <defs>
+      <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+        <feColorMatrix
+          in="blur"
+          type="matrix"
+          values="0 0 0 0 0   0 0 0.8 0 0   1 0 0 0 0  0 0 0 1 0"
+        />
+        <feMerge>
+          <feMergeNode in="colorMatrix" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+    </defs>
+  </svg>
+  <div class="containerColor py-3" style="margin-top: 100px">
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="display-4 fw-bold text-body-emphasis">
+        <span class="moradoOtro">ACERCA DE</span> NOSOTROS
+        <i class="fa-solid fa-user-secret fa-fade" style="color: #2c135d;"></i>
+      </h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          En <span class="moradoLetra fw-bold">Vision Code</span>, nos dedicamos a
+          construir soluciones digitales adaptadas a las necesidades de nuestros
+          clientes. Aunque nuestras raíces están en Boyacá, nuestro alcance es
+          global, ofreciendo un servicio 100% virtual que nos permite colaborar
+          con personas y empresas sin importar su
+          <span class="moradoLetra fw-bold">ubicación</span>
+        </p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+<div class="containerBody">
+  <div class="container my-5 cardsTeconologias">
+    <h1 class="display-4 fw-bold text-center text-white">TECNOLOGÍAS</h1>
+    <div class="mt-4 row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h1>HTML 5</h1>
+          <p>Estructura web moderna y adaptable para cualquier dispositivo.</p>
+          <img
+            src="../../../../assets/img/acercaDeImagenes/hmtl.png"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h1>CSS</h1>
+          <p>Estilo visual que da vida a tu página con diseño y creatividad.</p>
+          <img
+            src="../../../../assets/img/acercaDeImagenes/css.png"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div class="mt-4 col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h1>ANGULAR</h1>
+          <p>
+            SDesarrollo dinámico y escalable para aplicaciones interactivas.
+          </p>
+          <img
+            src="../../../../assets/img/acercaDeImagenes/angular.png"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div class="mt-4 col-md-6">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h1>PHOTOSHOP</h1>
+          <p>
+            Edición gráfica profesional que eleva el aspecto visual de tu sitio.
+          </p>
+          <img
+            src="../../../../assets/img/acercaDeImagenes/photoshop.png"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

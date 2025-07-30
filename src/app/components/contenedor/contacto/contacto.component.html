@@ -1,0 +1,141 @@
+<div class="curved-section">
+    <div class="container px-4 py-5" id="custom-cards"   style="margin-top: 110px"
+    > 
+    <div class="container">
+      <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "YOUR_PUBLIC_KEY",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+<body>
+    <form id="contact-form">
+        <!-- To simplify the tutorial, the value is static. -->
+        <input type="hidden" name="time" value="Mar 10 2025 08:46">
+        <label>Name</label>
+        <input type="text" name="name" required>
+        <label>Email</label>
+        <input type="email" name="email" required>
+        <label>Subject</label>
+        <input type="text" name="title" required>
+        <label>Message</label>
+        <textarea name="message" required></textarea>
+        <input type="submit" value="Send">
+    </form>
+</body>
+    </div>
+    
+      <h1 class="pb-2 border-bottom">CONTACTA CON <span class="azulLetra">NOSOTROS</span></h1>
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <a href="https://www.instagram.com/vision.code24" target="_blank" class="text-decoration-none">
+            <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
+              <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/instagram-new.png" alt="instagram-new" class="justify-content-center" />
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-dark">INSTAGRAM</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="d-flex align-items-center me-3">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>VISION.CODE24</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg imagenesDefondo"
+          >
+          <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/facebook-circled.png" alt="facebook-circled"/>
+          
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Much longer title that wraps to multiple lines
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="https://github.com/twbs.png"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden  rounded-4 shadow-lg"
+           
+          >
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Another longer title belongs here
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="https://github.com/twbs.png"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>California</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>5d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
